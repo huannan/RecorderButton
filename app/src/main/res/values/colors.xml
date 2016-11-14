@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="heart_red">#ef4133</color>
+    <color name="record_txt_color">#707070</color>
+    <color name="record_txt_color2">#A4A3A3</color>
+    <color name="horvoice_text_color">#737373</color>
+    <color name="horvoice_line_color">#FE7308</color>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/iv_bg"
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/wave1"
+        android:layout_width="@dimen/wave_size"
+        android:layout_height="@dimen/wave_size"
+        android:layout_centerInParent="true"
+        android:background="@drawable/wave" />
+
+    <ImageView
+        android:id="@+id/wave2"
+        android:layout_width="@dimen/wave_size"
+        android:layout_height="@dimen/wave_size"
+        android:layout_centerInParent="true"
+        android:background="@drawable/wave" />
+
+    <ImageView
+        android:id="@+id/wave3"
+        android:layout_width="@dimen/wave_size"
+        android:layout_height="@dimen/wave_size"
+        android:layout_centerInParent="true"
+        android:background="@drawable/wave" />
+
+    <com.nan.recordbutton.widget.RecorderButton
+        android:id="@+id/btn_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_record"
+        app:bg_normal="@drawable/bg_record"
+        app:bg_recording="@drawable/bg_recording"
+        app:bg_want_cancel="@drawable/bg_record"
+        app:max_record_time="15"
+        app:max_voice_level="150"
+        app:min_record_time="10"
+        app:txt_normal=""
+        app:txt_recording=""
+        app:txt_want_cancel="" />
+
+    <com.nan.recordbutton.widget.HorVoiceView
+        android:id="@+id/hv_voice"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/btn_record"
+        android:layout_marginTop="45dp"
+        app:voiceLineColor="@color/horvoice_line_color"
+        app:voiceTextColor="@color/horvoice_text_color" />
+
+    <TextView
+        android:id="@+id/tv_txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:text="@string/record_txt2"
+        android:textColor="@color/record_txt_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_txt2"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/record_txt1"
+        android:textColor="@color/record_txt_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_txt0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_txt1"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/record_enougth"
+        android:textColor="@color/heart_red"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_record"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/record_txt3"
+        android:textColor="@color/record_txt_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_state"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/record_txt4"
+        android:textColor="@color/record_txt_color2"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
